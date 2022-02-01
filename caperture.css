@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #9c9c9c;
+    /*font-family: 'Arial', sans-serif;*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+
+nav {
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    background: #000113;
+    color: #d0d0bc;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #d0d0bc;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover {
+    background: #fe3e47;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: #E4B005;
+    text-shadow: 0 0 20px #E4B005;
+}
+
+.fa-twitter:hover {
+    color: #E4B005;
+    text-shadow: 0 0 20px #E4B005;
+}
+
+.fa-instagram:hover {
+    color: #30A0BA;
+    text-shadow: 0 0 20px #30A0BA;
+}
+
+.fa-github:hover {
+    color: #30A0BA;
+    text-shadow: 0 0 20px #30A0BA;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000113;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #fe3e47;
+        font-size: 1.6rem;
+        text-shadow: 0 0 20px #fe3e47;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    color: #fe3e47
+}
